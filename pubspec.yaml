@@ -1,0 +1,43 @@
+name: fitness_trainer
+description: "FORMA personal trainer and nutrition tracker."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  auto_route: ^11.1.0
+  flutter_svg: ^2.2.4
+  http: ^1.4.0
+  image_picker: ^1.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.15.1
+  auto_route_generator: ^10.6.0
+  flutter_gen_runner: ^5.15.0
+
+flutter_gen:
+  output: lib/gen/
+  integrations:
+    flutter_svg: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+  fonts:
+    - family: Unbounded
+      fonts:
+        - asset: assets/fonts/Unbounded.ttf
+    - family: Onest
+      fonts:
+        - asset: assets/fonts/Onest.ttf
+    - family: IBM Plex Sans
+      fonts:
+        - asset: assets/fonts/IBMPlexSans.ttf
